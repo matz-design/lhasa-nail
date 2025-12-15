@@ -10,7 +10,7 @@
       margin: 0;
       font-family: "Helvetica", "Arial", sans-serif;
       color: #333;
-      line-height: 1.5;
+      line-height: 1.7;
     }
 
     /* ... (省略: to-top, navbar, header, artist, menu-item, footer スタイル) ... */
@@ -46,6 +46,10 @@
         font-size: 0.8em;
     }
 
+	  .menu-item {
+		  padding-bottom: 8px;
+	  }
+	  
     /* --- モーダルウィンドウのスタイル (画像拡大用) --- */
     #modal {
         display: none; 
@@ -453,20 +457,28 @@
 <section id="menu">
   <h2>MENU</h2>
 <hr>
-  <div class="menu-item">ワンカラー</div>
-  <div class="menu-item">グラデーション</div>
-  <div class="menu-item">フレンチネイル</div>
-  <div class="menu-item">シンプルデザイン</div>
-  <div class="menu-item">デザインネイル</div>
-  <div class="menu-item">オフ（自店／他店）</div>
-
-  <p class="small-text">※価格は調整中。決まり次第、追記します。</p>
+	<div class="menu-item">【初回オフ代無料】</div>  
+	<div class="menu-item">・ワンカラー　4,900yen</div>
+  <div class="menu-item">・シンプルデザイン　5,000yen</div>
+  <div class="menu-item">・デザインネイル　6,000yen</div>
+  <div class="menu-item">・ラメグラデーション　4,000yen<br>
+  （ラメ全体可）  </div>
+  <div class="menu-item">・カラーグラデーション　5,000yen<br>
+  （ピンク、ベージュ、ホワイト限定カラーとなります）</div>
+  <div class="menu-item">・犬ネイル　7,900yen</div>
+  <div class="menu-item">・お好きな指1本（両手）に1犬種描きます。　各1,500yen<br>
+  （他の指はワンカラーとなります。カラーチャートよりお選びください）</div>
+  <div class="menu-item">・持ち込みデザイン応相談（写真など先に送っていただきます）</div>
+  <div class="menu-item">・長さ出し（チップ）1本　700yen</div>
+  <div class="menu-item">・亀裂補強1本　500yen</div>	
+  <p class="small-text">※FOOTネイルは準備中です。<br>
+※料金はすべて税込価格です。</p>
 </section>
 
 <section id="gallery">
   <h2>GALLERY</h2>
 	<hr>
-  <p class="small-text">今まで手がけた一部の作例をご紹介します。</p>
+  <p class="small-text">今まで手がけた作例の一部をご紹介します。</p>
 
   <div class="gallery" id="imageGallery">
     <img src="gallery1.jpg" alt="ネイルギャラリー 1" onclick="openModal('gallery1.jpg')">
@@ -493,11 +505,11 @@
   <div class="artist-content">
     <div class="artist-image-container">
       <img src="artist-image.jpg" alt="ネイリストの画像">
-      <h3>ネイリスト：今 由香里</h3>
+      <h3>ネイリスト：Yukari</h3>
     </div>
     <div class="artist-text">
       <p>
-        初めまして、ネイリストの今（こん）です。<br>
+        初めまして、元トリマー ネイリストのYukariです。<br>
         ネイリスト歴2年、大人の女性のシンプルで上品なデザインを得意としています。
       </p>
       <p>
@@ -519,10 +531,12 @@
     千葉県野田市<br>
     ※自宅サロンのため、住所詳細は予約時にご案内いたします。
     <br><br>
-    営業時間：調整中<br>
-    定休日：調整中<br>
-    施術時間：90〜120分
-  </p>
+    【営業時間】調整中<br>
+    【定休日】調整中<br>
+    【施術時間について】<br>
+    90〜120分 ※デザインにより、施術時間が前後する場合がございます。 <br>
+  【お支払いについて】<br>
+  現金のみとなります。</p>
 </section>
 
 <section id="reservation" style="text-align:center;">
