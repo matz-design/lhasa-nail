@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nail Salon LHASA | ネイルサロン ラサ</title>
+<meta name="description" content="元トリマーのネイリストYukari-ユカリが運営する千葉県野田市にあるネイルサロンLHASA-ラサの公式サイトです。元トリマーならではの”ワンちゃんネイル”が人気です。">
 
   <style>
     body {
       margin: 0;
       font-family: "Helvetica", "Arial", sans-serif;
       color: #333;
-      line-height: 1.7;
+      line-height: 1.8;
+		font-size: 16px;
+  -webkit-text-size-adjust: 100%;
     }
 
     /* ... (省略: to-top, navbar, header, artist, menu-item, footer スタイル) ... */
@@ -46,9 +49,21 @@
         font-size: 0.8em;
     }
 
-	  .menu-item {
-		  padding-bottom: 8px;
-	  }
+.menu-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item span {
+  font-weight: 600;
+}
 	  
     /* --- モーダルウィンドウのスタイル (画像拡大用) --- */
     #modal {
@@ -158,6 +173,26 @@
       box-sizing: border-box; 
     }
 
+	 .hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f7f5f2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #666;
+} 
+	  
     .hero-content::before {
         content: none;
     }
@@ -185,27 +220,38 @@
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 14px 28px;
+      padding: 16px 30px;
       background: #c7a6a1;
       color: #fff;
       text-decoration: none;
       border-radius: 6px;
       font-size: 1.1rem;
     }
-
+	  
     section {
-      padding: 40px 30px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
 
     h2 {
       font-size: 2rem;
-      margin-bottom: 10px;
+	  letter-spacing: 0.1em;	
+      margin-bottom: 40px;
       text-align: center;
       font-weight: 400;
       color: #b48e88;
+	  position: relative;
     }
+	  
+  h2::after {
+	  content: "";
+	  width: 40px;
+	  height: 1px;
+	  background: #999;
+	  display: block;
+	  margin: 20px auto 0;
+	  } 
     
     /* --- GALLERY スタイル --- */
     #gallery {
@@ -342,6 +388,11 @@
       font-size: 1.3rem;
     }		
 	
+	  section {
+    padding: 40px 16px;
+  }	
+		
+		
 	/* 1. ナビゲーションリスト (ul) の設定 */
   .nav-links {
     width: 100%; /* 横幅いっぱいにする */
@@ -364,50 +415,16 @@
     font-size: 0.8rem; 
     display: block;
     padding: 5px 0;
-  }	
-		
-		
-		
-      /* ★修正/追加: GALLERYをスライド表示にするためのスタイル★ */
-      .gallery {
-          display: flex;
-          flex-wrap: nowrap; /* 画像を折り返さない */
-          overflow-x: scroll; /* 横スクロールを可能にする */
-          scroll-snap-type: x mandatory; /* スナップ効果（画像がピタッと止まる） */
-          gap: 0; /* スライド時はギャップを削除 */
-          padding: 0 15px; /* 左右に少し余白を持たせる */
-          box-sizing: border-box;
-      }
-      
-      .gallery img {
-          /* 画面の約90%の幅に設定し、両端が見切れるようにする */
-          width: 90%; 
-          height: auto;
-          flex-shrink: 0; /* 縮まないようにする */
-          scroll-snap-align: center; /* 中央にスナップ */
-          margin: 0 5px; /* 画像間のスペース */
-          max-width: none; /* 固定幅を解除 */
-      }
-      
-      .slide-nav {
-          display: flex; /* スマホでのみボタンを表示 */
-      }
-      /* ------------------------------------------- */
-
-      /* ★ ARTISTを縦並びにする ★ */
-      .artist-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-		gap: 0px;  
-      }
-      .artist-text {
-        text-align: left;
-      }		
+  }		
 		
       /* ... (省略: header p, artist スタイル) ... */
     }
-	  
+	
+     /* GALLERY画像をPCで2列にする */
+     .gallery img {
+		 width: calc(50% - 7.5px);
+		 margin-bottom: 15px; 
+        }	  
 
 	
     footer {
@@ -505,7 +522,7 @@
   <div class="artist-content">
     <div class="artist-image-container">
       <img src="artist-image.jpg" alt="ネイリストの画像">
-      <h3>ネイリスト：Yukari</h3>
+      <h3>ネイリスト：YUKARI</h3>
     </div>
     <div class="artist-text">
       <p>
