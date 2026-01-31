@@ -225,7 +225,15 @@ header {
 	  margin: 20px auto 0;
 	  } 
     
-    /* --- GALLERY スタイル --- */
+
+    /* --- room スタイル --- */  
+    .room img {
+        width: 45%;
+        border-radius: 4px;
+    }
+
+
+/* --- GALLERY スタイル --- */
     #gallery {
         position: relative; /* スライドボタンの基準点とする */
         padding-bottom: 90px; /* スライドボタンのスペースを確保 */
@@ -248,7 +256,6 @@ header {
         margin-bottom: 0; 
         cursor: pointer; 
     }
-
 
   /* Instagramウィジェットのコンテナスタイル */
 .instagram-container {
@@ -301,7 +308,7 @@ header {
         text-align: center;
     }
 
-    .artist-content {
+    .artist-content,.room {
         display: flex;
         align-items: flex-start; 
         gap: 40px;
@@ -391,8 +398,11 @@ header {
     display: block;
     padding: 5px 0;
   }	
-		
-		
+
+	/* room画像 */
+	.room img {
+		width: 100%;
+		}	
 		
      /* GALLERY画像をPCで2列にする */
      .gallery img {
@@ -406,7 +416,7 @@ header {
       /* ------------------------------------------- */
 
       /* ★ ARTISTを縦並びにする ★ */
-      .artist-content {
+      .artist-content,.room {
         flex-direction: column;
         align-items: center;
         text-align: center;
