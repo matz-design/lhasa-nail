@@ -230,6 +230,7 @@ header {
     .room img {
         width: 45%;
         border-radius: 4px;
+		margin-top: 20px;
     }
 
 
@@ -401,7 +402,7 @@ header {
 
 	/* room画像 */
 	.room img {
-		width: 100%;
+		width: 90%;
 		}	
 		
      /* GALLERY画像をPCで2列にする */
